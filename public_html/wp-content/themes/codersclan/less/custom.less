@@ -135,9 +135,18 @@ footer {
     align-items: center;
     font-size: 1rem;
     font-weight: 300;
+    @media (max-width: 360px){
+      text-align: center;
+    }
     .credits {
       padding-left: 10px;
       padding-right: 10px;
+      @media(max-width: 520px){
+        order: 2;
+        padding-top: 20px;
+        flex:1 0 100%;
+        text-align: center;
+      }
     }
     #menu-footer-menu {
       padding-left: 0;
