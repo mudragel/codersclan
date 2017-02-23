@@ -1,8 +1,10 @@
 jQuery(document).ready(function ($) {
     $(document).on('invalid.wpcf7', function () {
-        var input = $('.wpcf7 input:not([type=submit])');
+        $('.wpcf7 .form-group').removeClass('has-error');
+        var input = $('input.wpcf7-not-valid');
         input.closest('.form-group').addClass('has-error');
     });
+
     var header = $('header').outerHeight();
     $(window).scroll(function(){
         setTimeout(function(){
